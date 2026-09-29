@@ -1,13 +1,13 @@
 class Engram < Formula
   desc "Local-first causal index over code history"
   homepage "https://github.com/clickety-clacks/engram"
-  version "0.2.9"
+  version "0.2.10"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/clickety-clacks/engram/releases/download/v0.2.9/engram-aarch64-apple-darwin"
-      sha256 "3a066b8697a316e788b45a2949fa84f33aefdb99665ffbab20202364d0f1185e"
+      url "https://github.com/clickety-clacks/engram/releases/download/v0.2.10/engram-aarch64-apple-darwin"
+      sha256 "076ff2069c465eedb8c0a8c06967b232b67ea5501bbbaf7ea79ec5c16a5793a3"
     else
       odie "Engram does not publish an x86_64 macOS binary yet. Add a source formula or release asset first."
     end
@@ -15,8 +15,8 @@ class Engram < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/clickety-clacks/engram/releases/download/v0.2.9/engram-x86_64-unknown-linux-gnu"
-      sha256 "f4a9e78da6984dce0cd6a23453ea37e423cdf0a82c11ca911456075b490b3349"
+      url "https://github.com/clickety-clacks/engram/releases/download/v0.2.10/engram-x86_64-unknown-linux-gnu"
+      sha256 "aefe36b79a9d0489bb78fc78002ac991e576cfbf84cf5f01e293ddbdc6603424"
     else
       odie "Engram does not publish a Linux binary for this CPU yet. Add a source formula or release asset first."
     end
