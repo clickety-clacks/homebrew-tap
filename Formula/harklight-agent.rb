@@ -1,28 +1,28 @@
 class HarklightAgent < Formula
   desc "Send request-bound Harklight conversations and listen for replies"
   homepage "https://github.com/clickety-clacks/harklight-agent"
-  version "0.2.6"
+  version "0.2.7"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/clickety-clacks/harklight-agent/releases/download/v0.2.6/harklight-agent-0.2.6-aarch64-apple-darwin.tar.gz"
-      sha256 "9f33f45ffbf199111962db6a56889fb7797132b4ea3ee834156e2fa91af75695"
+      url "https://github.com/clickety-clacks/harklight-agent/releases/download/v0.2.7/harklight-agent-0.2.7-aarch64-apple-darwin.tar.gz"
+      sha256 "366bb1c73516cb1a8e96a84a92cef8ab597df1be05f06d3cdc949b6ca5a5f5cd"
     end
     on_intel do
-      url "https://github.com/clickety-clacks/harklight-agent/releases/download/v0.2.6/harklight-agent-0.2.6-x86_64-apple-darwin.tar.gz"
-      sha256 "fdfc49d254e6d2d8aaa6be6066c845dcdc6a4bd1a86abce6c09cd84e6cecd937"
+      url "https://github.com/clickety-clacks/harklight-agent/releases/download/v0.2.7/harklight-agent-0.2.7-x86_64-apple-darwin.tar.gz"
+      sha256 "e9b230f8a543c78963225a436207fb7a3dceed6e4235353897330f7503a83607"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/clickety-clacks/harklight-agent/releases/download/v0.2.6/harklight-agent-0.2.6-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "848cefae9d32d4ad770fd72f245256446fa4ef6b0e9fbb64e1e3e25db9a6166b"
+      url "https://github.com/clickety-clacks/harklight-agent/releases/download/v0.2.7/harklight-agent-0.2.7-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "472ccea3191762d9379d3b843add9fc7bdc74df5a3cba945adad7a22539d1190"
     end
     on_intel do
-      url "https://github.com/clickety-clacks/harklight-agent/releases/download/v0.2.6/harklight-agent-0.2.6-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1149f89c6e4396a74473ca6c6849b73ef9ef5f2bbe51b4b3f69ab4efaa9d36fd"
+      url "https://github.com/clickety-clacks/harklight-agent/releases/download/v0.2.7/harklight-agent-0.2.7-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8a42f0d557d3a175b5e10667b2f57944516d53708759c33ce242881ff7bb6996"
     end
   end
 
@@ -32,6 +32,6 @@ class HarklightAgent < Formula
   end
 
   test do
-    assert_match "harklight-agent 0.2.6", shell_output("#{bin}/harklight-agent --version")
+    assert_match "harklight-agent 0.2.7", shell_output("#{bin}/harklight-agent --version")
   end
 end
